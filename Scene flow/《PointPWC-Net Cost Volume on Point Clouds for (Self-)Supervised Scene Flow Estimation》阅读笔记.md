@@ -8,5 +8,5 @@
 
 ## 网络结构
 
-<img src="D:\typora\Typora\document\picture\PointPWCnet.png" alt="PointPWCnet" style="zoom:200%;" />
+![PointPWCnet](../../picture/PointPWCnet.png)
 

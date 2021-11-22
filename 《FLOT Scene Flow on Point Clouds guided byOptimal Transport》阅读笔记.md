@@ -43,7 +43,7 @@ Optimal Transport》阅读笔记
 
 ### step1:寻找点之间的潜在联系
 
-<img src="D:\typora\Typora\document\picture\FLOTbackbone.png" style="zoom:80%;" />
+![FLOTbackbone](../../picture/FLOTbackbone.png)
 
 主要是OT模块，他的作用是通过p、q提取特征计算出两帧点云中每个点对应的信息，通过此可计算出场景流f^,然后再通过h进行提炼获得f_est
 
