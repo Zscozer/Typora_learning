@@ -8,5 +8,5 @@
 
 ## 网络结构
 
-![PointPWCnet](../../picture/PointPWCnet.png)
+![PointPWCnet](../picture/PointPWCnet.png)
 

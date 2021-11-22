@@ -4,7 +4,7 @@
 
 ## 网络结构
 
-![3dsnet](../../picture/3dsnet-16375479551421.png)
+![3dsnet](picture/3dsnet.png)
 
 ### Encoder
 
@@ -20,7 +20,7 @@
 
 
 
-<img src="../../picture/In%20and%20Conditional%20InNorm.png" alt="In and Conditional InNorm" style="zoom: 50%;" />
+<img src="picture/In%20and%20Conditional%20InNorm.png" alt="In and Conditional InNorm" style="zoom: 50%;" />
 
 ​	其中r和B代表旋转和平移变量
 
@@ -28,7 +28,7 @@
 
 ​	
 
-<img src="../../picture/adain%20normalization.png" alt="adain normalization" style="zoom:50%;" />  
+<img src="picture/adain%20normalization.png" alt="adain normalization" style="zoom:50%;" />  
 
 ​	Adain、In实际上是对内容编码x和风格编码y做了一个对齐，式子中 将x做了正太分布的标准化，然后对齐y空间，这样内容就和风格叠加了,但是adain中没有r、B，说明Adain的仿射参数是不需要进行学习的，AdaIn接受两个信息源：内容输入x和风格输入y，将x的通道级(channel-wise)均值和标准差匹配到y的通道级均值和标准差上
 
@@ -50,9 +50,9 @@ AtlasNet
 
 通过输入二维图像或者点云生成3d模型  (e)3d打印出的结果 在本文中我们只需要它的decoder
 
-![AtlasNet](../../picture/AtlasNet.png)
+![AtlasNet](picture/AtlasNet.png)
 
-![AtlasNet-structure](D:\typora\Typora\document\picture\AtlasNet-structure.png)
+![AtlasNet-structure](picture/AtlasNet-structure.png)
 
 这个AtlasNet实际上就是比原来这个latent shape输入多了一个单位正方形[0,1]^2，将这个单位正方形上均匀采样的二维点作为附加输入，并使用它在曲面上生成一个点，因此输出是平面的连续图像
 
@@ -60,7 +60,7 @@ AtlasNet
 
 Meshflow
 
-![image-20211020161443776](../../picture/Meshflow.png)
+![image-20211020161443776](picture/Meshflow.png)
 
 ​	Neural Mesh Flow由三个变形块组成，它们基于目标形状MT的形状嵌入z在球面网格顶点上进行逐点流动。时间实例0< T1< T2<  T表示通过第一个变形块将球形网格变形为粗椅表示Mp0。进一步的变形块进行细化，生成细化的网格Mp1, Mp2。
 
@@ -90,7 +90,7 @@ Meshflow
 
 ### STS(Style Transfer Score)
 
-<img src="../../picture/STS.png" alt="STS" style="zoom: 50%;" />
+<img src="picture/STS.png" alt="STS" style="zoom: 50%;" />
 
 # 疑问
 
